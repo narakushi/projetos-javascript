@@ -20,8 +20,13 @@ body {
   background: var(--color-three);
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 2%;
   align-items: center;
-  flex-flow: column wrap;
+}
+
+.container-timer img {
+  width: 20vmin;
 }
 
 .container-content {
@@ -49,10 +54,31 @@ body {
   padding: 10rem;
 }
 
-.timer-content h1 {
-  font-size: 2rem;
+.timer-content h2 {
+  font-size: 3rem;
 }
 
 .timer-content p {
   font-size: 4rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions button {
+  font-weight: bold;
+  color: var(--color-five);
+  padding: 1.5rem 3.5rem;
+  border-radius: 10rem;
+  border: 0.5rem solid var(--color-four);
+  cursor: pointer;
+  transition: all .3s linear;
+}
+
+.actions button:hover {
+  scale: 1.02;
 }
