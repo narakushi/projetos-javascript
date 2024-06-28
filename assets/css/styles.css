@@ -82,3 +82,7 @@ body {
 .actions button:hover {
   scale: 1.02;
 }
+
+.pause {
+  color: var(--color-one);
+}
